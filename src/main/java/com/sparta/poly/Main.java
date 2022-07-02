@@ -6,12 +6,12 @@ import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
-/*        Polygon testPoly;
+       Polygon testPoly;
         for(int x=0;x<10 ;x++){
             testPoly=PolygonFactory.getPolygon();
             System.out.println(testPoly);
         }
-*/        Polygon tri = new Triangle(10);
+/*         Polygon tri = new Triangle(10);
         Square sq = new Square(5);
         Hexagon hex = new Hexagon(9);
         ArrayList<Polygon> polyList = new ArrayList<Polygon>();
@@ -35,7 +35,7 @@ public class Main {
         ArrayList newList = new ArrayList(Arrays.asList(myList));
         polyList.sort(null);
         System.out.println(polyList);
-
+*/
     }
 
 }

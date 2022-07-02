@@ -14,8 +14,8 @@ public abstract class Polygon implements Comparable {
 
     public abstract int getArea();
 
-    public int compareTo(Object x) {
-        x=(Polygon) x;
+    public int compareTo(Object y) {
+        Polygon x=(Polygon) y;
         if (this.getArea() == x.getArea())
             return 0;
         if (this.getArea() > x.getArea())

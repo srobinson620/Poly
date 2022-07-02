@@ -7,7 +7,7 @@ class PolygonFactory {
     static int polychoice;
     public static Polygon getPolygon(){
         Polygon p;
-        polychoice = rand.nextInt(1,3);
+        polychoice = rand.nextInt(1,4);
         return p= switch (polychoice){
             case 1 -> new Triangle(rand.nextInt(15));
             case 2 -> new Square(rand.nextInt(15));
