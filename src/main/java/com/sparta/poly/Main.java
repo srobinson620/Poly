@@ -6,38 +6,18 @@ import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
-       Polygon testPoly;
-        for(int x=0;x<10 ;x++){
-            testPoly=PolygonFactory.getPolygon();
-            System.out.println(testPoly);
-        }
-/*         Polygon tri = new Triangle(10);
-        Square sq = new Square(5);
-        Hexagon hex = new Hexagon(9);
         ArrayList<Polygon> polyList = new ArrayList<Polygon>();
-        polyList.add(tri);
-        polyList.add(sq);
-        polyList.add(hex);
-        System.out.println(hex.getArea());
-        System.out.println(tri.getArea());
-        System.out.println(sq.getArea());
-        Random rand = new Random();
-        int[] myList = new int[100];
-        for (int i = 0;i<100;i++){
-            myList[i] = rand.nextInt(100);
-            System.out.println(myList[i]);
+        System.out.println("-------------------------------RANDOM POLYGON ARRAY ---------------------------");
+        for(int x=0;x<100 ;x++){
+            polyList.add(PolygonFactory.getPolygon());
+            Polygon.displayPoly(polyList.get(x));
         }
-        for(int x:myList){
-            System.out.println(x);
-
-        }
-        // convert array to ArrayList
-        ArrayList newList = new ArrayList(Arrays.asList(myList));
+        System.out.println("-------------------------------SORTED POLYGON ARRAY ---------------------------");
         polyList.sort(null);
-        System.out.println(polyList);
-*/
+        for(int x=0;x<100 ;x++){
+            Polygon.displayPoly(polyList.get(x));
+        }
     }
-
 }
 
 

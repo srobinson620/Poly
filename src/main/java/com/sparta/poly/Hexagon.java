@@ -7,8 +7,8 @@ public class Hexagon extends Polygon{
     }
 
     @Override
-    public int getArea() {
-        return (int) (3 * sideLength * sideLength * SQRT3 / 2) ;
+    public double getArea() {
+        return (3 * sideLength * sideLength * SQRT3 / 2) ;
     }
 
 }

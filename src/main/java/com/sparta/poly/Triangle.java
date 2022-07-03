@@ -6,8 +6,8 @@ public class Triangle extends Polygon{
     }
 
     @Override
-    public int getArea() {
-        return (int)((this.sideLength*this.sideLength*1.732)/4);
+    public double getArea() {
+        return (this.sideLength*this.sideLength*1.732)/4;
     }
 
 }

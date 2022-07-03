@@ -1,6 +1,6 @@
 package com.sparta.poly;
 
-public abstract class Polygon implements Comparable {
+public abstract class Polygon implements PolyInterface, Comparable {
     final double SQRT3 = 1.73;
     protected String description;
     protected int sideLength;
@@ -12,7 +12,7 @@ public abstract class Polygon implements Comparable {
         this.numSides = sides;
     }
 
-    public abstract int getArea();
+    public abstract double getArea();
 
     public int compareTo(Object y) {
         Polygon x=(Polygon) y;
@@ -23,6 +23,8 @@ public abstract class Polygon implements Comparable {
         else
             return -1;
     }
-
+    public static void  displayPoly(Polygon p){
+        System.out.printf("%-10s has %d. Side length:%d Area:%.2f%n", p.description, p.numSides, p.sideLength, p.getArea());
+    }
 }
 
